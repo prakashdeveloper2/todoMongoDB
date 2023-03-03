@@ -8,5 +8,10 @@
   </head>
   <body>
     <h1>Todos</h1>
+    <ul>
+      <% todos.forEach(function(user){ %>
+       <%- user.todo %>
+      <% }); %>
+    </ul>
   </body>
 </html>

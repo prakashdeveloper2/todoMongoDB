@@ -7,9 +7,11 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-
-    <a href="/todos">Todos</a><br>
-    <a href="/schools">Schools</a>
+    <h1>Schools</h1>
+    <ul>
+      <% Schools.forEach(function(school){ %>
+       <%- school.schoolName %>
+      <% }); %>
+    </ul>
   </body>
 </html>

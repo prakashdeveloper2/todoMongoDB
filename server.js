@@ -6,6 +6,7 @@ const app = express();
 const connectDB = require('./config/database');
 const homeRoutes = require('./routes/home');
 const todoRoutes = require('./routes/todos');
+const schoolsRoutes = require('./routes/schools');
 
 //.env
 require('dotenv').config({ path: './config/.env' });
@@ -22,8 +23,9 @@ app.use(express.json());
 //Routes
 app.use('/', homeRoutes);
 app.use('/todos', todoRoutes);
+app.use('/schools',schoolsRoutes);
 
 //Start the server
 app.listen(process.env.PORT, () => {
-  console.log(`Server is running!`);
+  console.log(`Server is running! ${process.env.port}`);
 });
