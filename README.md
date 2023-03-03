@@ -19,12 +19,12 @@
 
 ### Features
 
-- [x] Folder Structures
+- [X] Folder Structures
 - [ ] Model Structure
 - [ ] View Structure
-- [x] Controller Structure
-- [x] HTTP set
-- [x] Packages Loaded
+- [X] Controller Structure
+- [X] HTTP set
+- [X] Packages Loaded
 
 ### Install
 
